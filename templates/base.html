@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="ru">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>
+        {% block title %}
+            Сайт магазина одежды
+        {% endblock %}
+    </title>
+</head>
+<body>
+<div class="container-fluid">
+    {% block nav %}
+    <nav>
+        <a href="{{ url_for('main') }}">Главная</a>
+        <a href="{{ url_for('clothes') }}">Одежда</a>
+        <a href="{{ url_for('shoes') }}">Обувь</a>
+        <a href="{{ url_for('coat') }}">Куртка</a>
+    </nav>
+    {% endblock %}
+
+    {% block content %}
+        Страница не заполнена
+    {% endblock %}
+
+    <div class="row fixed-bottom modal-footer">
+        <hr>
+        <p>Общий футор</p>
+    </div>
+</div>
+
+
+</body>
+</html>
+
